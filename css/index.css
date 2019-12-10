@@ -183,7 +183,9 @@ footer p{
         margin-left: 22%;
     
     }
-   
+    .bottom{
+        margin-top: 2%;
+    }
 }
 @media (max-width: 500px ){
     nav {

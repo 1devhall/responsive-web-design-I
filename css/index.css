@@ -1,3 +1,266 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+* {
+    border:1px solid black;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: square;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.links {
+	display: flex;
+	margin: 5%;
+	text-align: center;
+	justify-content: space-between;
+	margin-top: 2%;
+	margin-bottom: 1%;
+    
+    width: 70%;
+}
+
+.left {
+  text-align:center;
+  display:flex;
+  flex-direction: column;
+  width:40%;
+  height: 2%;
+}
+header img{
+	width:25%;
+}
+header{
+	display:flex;
+	justify-content: center;
+	justify-content: space-around;
+	align-items: center;
+}
+h1{
+	font-size:70px;
+}
+.btn{
+	border:1px solid grey;
+	font-size:25px;
+	padding: 0px;
+	margin: 5% ;
+	margin-top: 5%;
+	margin-right: 38%;
+	margin-left: 36%;
+
+}
+hr {
+	width: 90%;
+}
+.bigContainer {
+    width: 90%;
+    margin: 0 auto;
+    font-size:20px;
+}
+.top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.tc{
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+.middle-img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.bottom {
+    display: flex;
+    margin: 0 2% 20px;
+    justify-content: space-around;
+}
+.bottom .tc{
+    padding-right: 4%;
+}
+
+.contact{
+	margin-left: 5%;
+}
+footer p{
+	text-align: center;
+	display:flex;
+	justify-content: center;
+	width: 95%;
+	margin: 3.5%;
+} 
+@media (max-width: 800px){
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        order: -1;
+        margin-top: 2%;
+        margin-bottom: 1%;
+    }
+    .links {
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+    }
+
+    header img {
+        display: none;
+    }
+    .btn{
+        display:flex;
+        justify-content: center;
+        border:1px solid grey;
+        font-size:25px;
+        padding: 0px;
+        margin: 5% ;
+        margin-top: 5%;
+        margin-right: 22%;
+        margin-left: 22%;
+    
+    }
+    .bottom{
+        margin-top: 2%;
+    }
+}
+@media (max-width: 500px ){
+    nav {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    nav .image  {
+        display:flex;
+        justify-content: center;
+        border-bottom: 1px solid black;
+        width:100%;
+        order:-2;
+    }
+    .links{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0%;
+     }
+    a{
+        padding-top:2%;
+        padding-bottom: 2%;
+        content: " ";
+        display: block;
+        border-bottom: 1px solid black;
+        width:100%;
+    
+    }
+    header img {
+        display: none;
+
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        width:100%;
+        margin: 0%;
+        padding: 0%;
+    
+    }
+    .left div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .btn{
+        display:flex;
+        justify-content: center;
+        border:1px solid grey;
+        font-size:25px;
+        padding: 0px;
+        margin: 5% ;
+        margin-top: 5%;
+        margin-right: 11%;
+        margin-left: 13%;
+    
+    }
+   
+    .tc{
+        width:100%;
+    }
+   .bottom {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+     .top{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+    } 
+}
 
